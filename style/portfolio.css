@@ -1,61 +1,249 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* header style  */
 
-header{
-    background-color: #FFF8F3;
-    /* background:url('../images/header_bg.png'); */
+header {
+  background-color: #fff8f3;
+  background: url("../images/header_bg.png"), url("../images/developer.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, left top;
 }
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 200px;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 200px;
 }
 
-.nav_title{
-    font-size: 45px;
-    font-weight: 800;
+.nav_title {
+  font-size: 45px;
+  font-weight: 800;
 }
 
-nav a , nav ul li a{
-    text-decoration: none;
+nav a,
+nav ul li a {
+  text-decoration: none;
 }
 
-nav a span{
-    color: #FD6E0A;
+nav a span {
+  color: #fd6e0a;
 }
 
-nav ul{
-    display: flex;
-    gap: 51px;
-    align-items: center;
+nav ul {
+  display: flex;
+  gap: 51px;
+  align-items: center;
 }
 
-nav ul li{
-    list-style: none;
+nav ul li {
+  list-style: none;
 }
 
-nav ul li a button{
-    font-size: 20px;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding: 18px 35px;
+nav ul li a {
+  font-size: 20px;
 }
 
-.hero{
-    display: flex;
-    align-items: center;
-}
-/* utilitty classes  */
+/* banner styles */
 
-.btn_primary{
-    background-color: #FD6E0A;
-    border: none;
-    border-radius: 5px;
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 35px 0px 200px;
+}
+
+.banner-content {
+  max-width: 580px;
+}
+
+.banner-gretting {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 59.83px 0px;
+}
+
+.banner-title {
+  font-size: 85px;
+  font-weight: 700;
+  margin: 56.85px 0px;
+}
+
+.banner-description {
+  margin: 16px 0px;
+}
+
+.banner-img {
+  width: 580px;
+}
+
+/* main styles  */
+
+main {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+main section {
+  margin: 130px 0px;
+}
+
+/* about styles  */
+
+#about {
+  padding: 130px 150px;
+  border-radius: 10px;
+}
+
+.about-description {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-title {
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
+.item-description {
+  font-weight: 600;
+}
+
+/* skill styles  */
+
+.skill-description {
+  font-size: 18px;
+  margin: 18px 0px;
+}
+
+.skill-items {
+  display: flex;
+  gap: 24px;
+}
+
+.skill-item {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 22px 0px;
+}
+
+.skill-item-description {
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
+/* resume section styles */
+
+.resume-container {
+  display: flex;
+  gap: 24px;
+}
+
+.resume-column-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 22px 0px;
+}
+
+.experience-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 22px 0px;
+}
+
+.experience-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.resume hr {
+  margin: 30px 5px;
+}
+
+.down-cv-btn {
+  margin-top: 50px;
+}
+
+/* footer styles */
+footer {
+  padding: 130px 230px;
+  display: flex;
+  gap: 100px;
+}
+.footer-column {
+  width: 50%;
+}
+
+.footer-column-description {
+  margin: 16px 0px;
+}
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+  height: 64px;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 24px;
+  border: none;
+}
+/* utility classes  */
+
+.btn_primary {
+  background-color: #fd6e0a;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 18px 35px;
+}
+
+.dark-1 {
+  color: #181818;
+}
+
+.dark-2 {
+  color: #474747;
+}
+
+.dark-3 {
+  color: #757575;
+}
+
+.dark-4 {
+  color: #ffffff;
+}
+
+.secondary-bg {
+  background-color: #fff8f3;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 35px;
+  margin: 35px 0px;
 }
